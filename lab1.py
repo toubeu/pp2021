@@ -13,7 +13,7 @@ def student():
     return A
 
 
-#creating a dict of student
+#creating a list of student
 Students = []
 count = countstudents()
 for i in range(0,count):
@@ -26,7 +26,7 @@ def students_list(Students):
 
 
 
-#function for course (getting info and listing_
+#function for course (getting info
 def countcourse():
     count = int(input("How many course are there in the semester ?"))
     return count
@@ -40,7 +40,7 @@ def course():
     return B
 
 
-#creating dict of courses
+#creating list of courses
 Courses =[]
 count =countcourse()
 for i in range(0,count):
