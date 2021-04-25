@@ -6,7 +6,7 @@ import os.path
 
 def check():
     if os.path.isfile("student.dat"):
-        with zipfile.ZipFile("student.dat") as zf:
+        with zipfile.ZipFile("student.dat",'r') as zf:
             zf.extractall()
         print (f"extracted premade database\n")
     else:
