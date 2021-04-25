@@ -1,4 +1,5 @@
 class Student:
+    gpa=0.0
     def __init__(self, name, DoB, Sid):
         self.name = name
         self.DoB = DoB
@@ -70,6 +71,7 @@ def addMark():
             print ("read the sentence again and follow it")
         else: break
     return Marks
+
 def students_list(Students):
     for Student in Students:
         print(Student)

@@ -113,7 +113,8 @@ def calGPA(Marks,Students):
                 etc= np.append(etc,[Mark.etcs],axis=0)
                 ETCcount= ETCcount + Mark.etcs
         GPA= (m@etc)/ETCcount
-        Student.gpa= GPA
+        gpa=math.floor(GPA*10)/10
+        Student.gpa= gpa
 
 def sortGPA(Students):
     GPA_list=sorted(Students,key=lambda x: x.gpa,reverse=True)
